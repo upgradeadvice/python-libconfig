@@ -3,3 +3,8 @@ pylibconfig.egg-info
 *.bak
 *.swp
 *.pyc
+*.dll
+*.idb
+build
+dist
+pylibconfig.egg-info

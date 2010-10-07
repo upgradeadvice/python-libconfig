@@ -19,9 +19,11 @@ setup(
         Extension(
             "pylibconfig",
             ["src/pylibconfig.cc"],
-            libraries=["boost_python", "config++"]
-            #include_dirs=includes,
-            #extra_link_args=lflags
+            libraries=["boost_python-vc90-mt-1_44", "libconfig++"],
+            library_dirs=['../libconfig-1.4.5/Release', 'C:/Program Files (x86)/boost/boost_1_44/lib'],
+            include_dirs=['../libconfig-1.4.5/lib', 'C:/Program Files (x86)/boost/boost_1_44']
+            #language='c++',
+            #extra_compile_args=["/EHsc"]
                  )
                 ]
      )

@@ -1,5 +1,12 @@
 python-libconfig
 
+MSVC compatibility fork notes:
+Tested with libconfig-1.4.5 and boost_python-vc90-mt-1_44.
+Build libconfig-1.4.5\lib\libconfig++.vcproj with MSVC.
+Boostpro provides working boost_python and headers (works with python 2.6).
+Put the two .dll files in your path before you run the test.
+
+
 Python bindings to the C++ library libconfig
 
 
